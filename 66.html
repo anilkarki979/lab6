@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Find the area of a circle</title>
+</head>
+<body>
+  <script language="JavaScript">
+    function CircleArea(){
+        var radius =document.getElementById("radius").value;
+        var area =radius * radius * Math.PI;
+        document.getElementById("area").value = area;
+        
+    }
+    function RectangleArea(){
+        var height =document.getElementById("height").value;
+        var width =document.getElementById("width").value;
+        
+        var area =height * width;
+        document.getElementById("area").value = area;
+        
+    }
+    </script>
+    <h1> For Circle</h1>
+    radius <input type="Text" name="radius" id="radius" size="4">
+    <br><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="CircleArea()">Calculate</button> 
+    <br><br>
+    Area <input type="Text" name="area" id="area" size="4" value="">
+    <br><br>
+    
+    
+</script>
+</body>
