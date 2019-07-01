@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selective Statement in JS</title>
+</head>
+<body style="text-align: center; color: #28a745;">
+	<script type="text/javascript">
+		//Write a "Good Morning!" greeting if
+		//the time is less than 12
+
+		//Write a "Good Afternoon!" greeting if
+		//the time is greater than 12 and less than 17
+
+		//Write a "Good Evening!" greeting if
+		//the time is greater than 17 and less than 1
+
+		var d = new Date();
+		var time = d.getHours();
+		if (time<12)
+		{
+			document.write("<h1>Good Morning!</h1>");
+		}
+		else if (time>12 && time<17) {
+			document.write("<h1>Good Afternoon!</h1>");
+		}
+		else if (time>17 && time<1) {
+			document.write("<h1>Good Evening!</h1>");
+		}
+
+	</script>
+
+
+</body>
+</html>
